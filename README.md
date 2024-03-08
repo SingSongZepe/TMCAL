@@ -82,3 +82,38 @@
     > $\delta_{BX}$ - Total pressure recovery coefficient at entrance device
     > while K = 1.4 and R = 287.3 kJ/(kg*K), $S_B=0.0404$
 
+#### Notation Rules
+- $H_{th1}$ - use “_” to indicate subscript
+- $T_{k1}^*$ - use "__" to indicate superscript
+    > T_k1__tot = ?
+- If subscript and superscript exist at the same time, you need to express the subscript first and then the superscript.
+    > example: $T_{k1}^*$
+    > notate as: T_k1__tot
+- In particular, * (for example, total parameters of gas) is represented by tot
+    > example: $T^*$
+    > notate as: T__tot
+- Greek letters are represented by Roman pronunciation
+    > example: $\Omega$
+    > notate as: Omega
+    > example: $\eta$
+    > notate as: eta
+- If you encounter $\Delta$, for this Character, we use "d"
+    > example: $\Delta\alpha$
+    > notate as: dalpha
+- If the subscript is very complicated, you can agree with the team members in advance on a simple writing method.
+    > example: $(\Delta\alpha)_{\frac{b}{t}=1}$
+    > notate as: dalpha_bt1
+- If an overline appears, add one in front of the entire notation "_", but in python file, variables with "_" in the front can't be exported. so you need to add an "o" in the front, like "o_".
+    > example: $\overline{\Delta\beta}$
+    > notate as: o_dbeta
+- If a division operation appears in the formula, add an underscore before the numerator and denominator, and add "frac" at the front
+    > example: $\frac{b}{c}$
+    > frac_b_c
+
+#### Some examples
+> example 1
+> $(\overline{\Delta\alpha})_{\frac{b}{t}=1}$   
+> notate as: o_dalpha_bt1
+> example 2
+> $(\frac{b}{t})_{c.a.}$
+> notate as: frac_b_t_ca
